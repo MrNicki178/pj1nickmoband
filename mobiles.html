@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickMobiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mobilestore.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="nav">
+        <h1 style="margin-left: 20px;">NickMobiles</h1>
+
+        <div class="nav-terminal">
+
+            <p class="nav-opp" onclick="NavShow()" style="margin-right: 20px;"><a>Menu</a></p>
+            
+        </div>
+    </nav>
+
+    <div class="menu">
+        <p style="text-align: right;font-size: 30px; padding: 7px;cursor: pointer;; " onclick="NavClose()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="menu-link">
+            <p class="menu-list"><a href="mobilestore.html">Home</a></p>
+            <p class="menu-list"><a href="laptop.html">Laptops</a></p>
+            <p class="menu-list"><a href="mobiles.html">Mobiles</a></p>
+            
+        </div>
+    </div>
+
+    <div class="mobiles-section">
+        <form class="Mobiles-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </form>
+
+        <div class="mobiles-list" id="mobiles-lists">
+             
+            <div class="mobiles-box">
+                <img src="images/samsung.jpg" style="width: 150px;height: 150px;">
+                <p>Samsung</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/oppo.jpg" style="width: 150px;height: 150px;">
+                <p>Oppo</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/apple.jpg" style="width: 150px;height: 150px;">
+                <p>Apple</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/vivo.png" style="width: 150px;height: 150px;">
+                <p>Vivo</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/realme.png" style="width: 150px;height: 150px;">
+                <p>Realme</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/poco.jpg" style="width: 150px;height: 150px;">
+                <p>Poco</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/oneplus.jpeg" style="width: 150px;height: 150px;">
+                <p>Oneplus</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/nokia.jpg" style="width: 150px;height: 150px;">
+                <p>Nokia</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/moto.jpeg" style="width: 150px;height: 150px;">
+                <p>Motorola</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/mip.jpg" style="width: 150px;height: 150px;">
+                <p>Redmi/Xiaomi</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/lgp.jpg" style="width: 150px;height: 150px;">
+                <p>LG</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/iqoo.jpg" style="width: 150px;height: 150px;">
+                <p>IQOO</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/infinix.jpg" style="width: 150px;height: 150px;">
+                <p>Infinix</p>
+            </div>
+
+            <div class="mobiles-box">
+                <img src="images/honor.jpeg" style="width: 150px;height: 150px;">
+                <p>Honor</p>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navbar = document.querySelector(".menu")
+        function NavShow() {
+            navbar.style.left = "0"
+    
+        }
+    
+        function NavClose() {
+            navbar.style.left = "-100%"
+    
+        }
+    
+        function notify(){
+            alert("We Will Inform You When PreBook Is Ready")
+        }
+    </script>
+
+    <script src="mobiles.js"></script>
+    
+</body>   
+</html> 
